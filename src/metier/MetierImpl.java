@@ -6,6 +6,7 @@ public class MetierImpl implements IMetier {
    private IDao dao;
 	@Override
 	public double calcul() {
+		System.out.println("Metier ....");
 		double d=dao.getData();
 		double res= d*23;
 		return res;
